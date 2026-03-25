@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Send+Flowers&family=Sora:wght@100..800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #d0da63;
+  --bg-color: #ffffff;
+  --font-color: #0a0b05;
+  --black-color: #0a0b05;
+  --button-border: rgba(10, 11, 5, 0.15);
+  --input-bg: rgba(10, 11, 5, 0.05);
+  --input-border: rgba(10, 11, 5, 0.15);
+}
+
+[data-theme="dark"] {
+  --bg-color: #0a0b05;
+  --font-color: #ffffff;
+  --button-border: rgba(255, 255, 255, 0.2);
+  --input-bg: rgba(255, 255, 255, 0.1);
+  --input-border: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-color);
+  color: var(--font-color);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+.medium-text {
+  font-size: 1.125rem;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1%;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 120%;
+}
+
+h4,
+h5,
+h6 {
+  line-height: 140%;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+h3 {
+  font-size: 2.75rem;
+}
+
+h4 {
+  font-size: 2.25rem;
+}
+
+h5 {
+  font-size: 1.75rem;
+}
+
+h6 {
+  font-size: 1.375rem;
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+input {
+  /* Text input */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  gap: 0.5rem;
+
+  width: 23.25rem;
+  height: 2.625rem;
+
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 12px;
+
+  margin-right: 1rem;
+
+  color: var(--font-color);
+}

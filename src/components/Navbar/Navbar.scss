@@ -1,0 +1,44 @@
+.navbar-nav {
+  padding: 0.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .left-div {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .right-div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .logo {
+    font-family: "Send Flowers", cursive;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 8%;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .left-div {
+      width: 100%;
+      justify-content: center;
+    }
+    .right-div {
+      display: none;
+    }
+
+    .link {
+      display: none;
+    }
+  }
+}
