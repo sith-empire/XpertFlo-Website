@@ -9,9 +9,15 @@ const Navbar = () => {
           Xpert<span>Flo</span>
         </a>
 
-        <a className="link">Features</a>
-        <a className="link">How it works</a>
-        <a className="link">FAQ</a>
+        <a href="/" className="link">
+          Features
+        </a>
+        <a href="/" className="link">
+          How it works
+        </a>
+        <a href="/" className="link">
+          FAQ
+        </a>
       </div>
       <div className="right-div">
         <Button primary={false}>Sign in</Button>
